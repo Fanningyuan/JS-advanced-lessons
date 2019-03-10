@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        var num1 = 20;
+        num1.toFixed(2);
+        // toFixed（n）函数保留小数的位数 ，超出部分四舍五入。返回的是字符串。
+
+        var numobject = new Number(num1);
+        console.log(numobject);
+
+        var num2 = 12345.6789;
+        num2.toPrecision(1);
+        // toPrecision(n)，四舍五入。
+        // n小于数字的整数位时，，表示成指数形式。
+        // 大于或等于数字整数位时，直接四舍五入。
+
+        var str1 = 'abcde';
+        str1.charAt(2);
+        // 保留字符
+         
+        str1.substring(0,-1);
+
+        var then = new Date(2011,8,1);
+        console.log(then);
+        console.log(then.getMonth());
+
+        function fn2(){
+            // "use strict"严格模式?????
+        
+            console.log(this);
+        }
+        fn2();
+
+        var str2='abcd';
+        str2.length = 1;
+        console.log(str2.length);
+    </script>
+</body>
+</html>
